@@ -4,13 +4,16 @@ using System.Collections;
 public class Test : MonoBehaviour
 {
 
+    int Add(int a, int b)
+    {
+        int c = a + b;
+        return c;
+    }
+
     void Start()
     {
-        int sum = 0; 
-        for(int i = 1; i <= 10; i++)
-        {
-            sum += i;
-        }
-        Debug.Log(sum);
+        int answer;
+        answer = Add(2, 3);
+        Debug.Log(answer);
     }
 }
