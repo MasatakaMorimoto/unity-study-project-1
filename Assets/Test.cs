@@ -1,17 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Test : MonoBehaviour {
+public class Test : MonoBehaviour
+{
 
-	void Start () {
-        string str = "happy ";
-        int num = 123;
-
-        string message = str + num.ToString();
-        Debug.Log(message);
-	}
-	
-	/*void Update (){
-	
-	}*/
+    void Start()
+    {
+        int sum = 0; 
+        for(int i = 1; i <= 10; i++)
+        {
+            sum += i;
+        }
+        Debug.Log(sum);
+    }
 }
