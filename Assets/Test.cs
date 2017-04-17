@@ -4,16 +4,14 @@ using System.Collections;
 public class Test : MonoBehaviour
 {
 
-    int Add(int a, int b)
-    {
-        int c = a + b;
-        return c;
-    }
-
     void Start()
     {
-        int answer;
-        answer = Add(2, 3);
-        Debug.Log(answer);
+        Vector2 startPos = new Vector2(2.0f, 1.0f);
+        Vector2 endPos = new Vector2(8.0f, 5.0f);
+        Vector2 dir = endPos - startPos;
+        Debug.Log(dir);
+
+        float len = dir.magnitude;
+        Debug.Log(len);
     }
 }
